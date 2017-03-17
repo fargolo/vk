@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "uplifted-water-157222",
+  "private_key_id": "3c4018aca988d193d531d1a3e02baad7f3bb1bca",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/CLmJ9lGyawBX\nBZ30K0BCsyWDp6gMsLWQaaQ25anfZQUnAVIWgrtucdGkaSE6AoWcCTRyDFAXzboI\nk1tPFoIl64rGsxr/8PuvW1GUBf3f/DdOo2KyufgD/JedYXGIfkLkox2zMI2TC+qa\neu561EvBCZffu9Rj9e4FJxnV6BWvJRN3sT/v5V780quHJiATYdIeRyjwr6COSgph\njbFK/THXkRvie5rO2aMDyzKqS2DnvwkWJRS7/ot7JRd1wXfrBGxzPHUCzfe1iVWb\nsrIKuYVhCkHad07/4YDHyFag+HCeV48o3ZZ3fcoyhTk3Jjmb8JFzP5eQImMpnyvq\nkU+wEvlzAgMBAAECggEAcKKDSv3pw4nlZGnSbPHHbMxV1R9YLUtPcjtncFrPYwEc\nHZhgvxcLzh3b3tWBmsN75bljq87otnA9POstTh9WU2dipq9ZvwhmTUlJez5hJtx9\n+6bH/ds6iZc4Cbo3h6Pyav5l944sG0ROahELZW6gz8uJOYh0vQ927KDWUdIKXv42\nJlGStNQ4IQNmPzCA4QVqUQlqqTDaSyTayGecJSq2efsQSI7XySnQ3YRr5jqvF8Gy\n0pQRkks+JEWh5fjwephY1BTB6sfQCdRc51VJqAvT5nJwMmfsbg6T02Eeda2lb1ax\nqi6Qewfbd0HvJjmBjhRtwcYwz4D+Ulud3lIce8bjmQKBgQD1Kuh5Pil+y3woLsa6\nNnOI9ODceL2BG/pF81vUGziavuB1s7SGYLuPYnQS5dfrtb+PZ6MjqFqwUVhAxNR4\nqNDzKcb9KjTD0+wiqr1w8fRGOd4Ee4CftGrtgbQamqhA9fhavwrbDl7j0uUplYKt\nD4pVDlwHOTWZJZzBOcwttN6M5QKBgQDHeYMX44CFmYioGOftYC2vhd/U0MBudRR0\nEQDyhVan6ATAvRO602eKxgqaAKfrcz/0Fb8+HhG13gRsB6LQIXzPiT95RFSuOqpz\ncEBNp9zP/tf6RDejYFofDocuSRtN0LD6aVufMnLAFh4Dt+vbT2pgr1rxq7UeorUK\ndibC5hTfdwKBgQDAOAcS4Cj6j6Hlg18uKnkFHTGbylKSApSD+Zy6vSjxMsybm+zj\nGr6TWda15l0XImVxkwj2cQ3BhdWS2n/XpkxFCjFI1qmOC/7s4z8qaZli4gXvL8GV\n9YeMdY/29+EJJZC13WkufKLrLrObmexdsXx82YhP5YvfafzwBlfOUivW/QKBgCEV\nwG6X51tBae8nomA20Z0JQWTU8vXfKXNO1q9i+kqDKzakpb8ZDVVxH5UHgtKEnRjo\n+n1dE2bs2iLo6VJIG6F4jDSa5si3JkpbVe8LZo6BIGV8JxZMBuabzEQbEBJKCPCf\nxPiUr3+4q2XGfbI0a9p5e0YWSsY4CnsfubId41xlAoGBALV00vaE0Ekxi3p8SAjp\niDMz0oog684WxaOw/2bTf0u1K5adMxsQuFFUNTZq6qnfglPqMLnk/L85D5NayAb+\nYleXWZdykfjS0LxMgeDPue95XDZV+7NQVf68Z8bXribtLBCaJ9U4u5cSAdTXyp1j\n/Rcuw7n+AJ4jif4SykOgjI5e\n-----END PRIVATE KEY-----\n",
+  "client_email": "pingfreud-vk@uplifted-water-157222.iam.gserviceaccount.com",
+  "client_id": "117509002827551208611",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pingfreud-vk%40uplifted-water-157222.iam.gserviceaccount.com"
+}
