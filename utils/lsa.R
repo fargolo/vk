@@ -1,4 +1,5 @@
 #! /usr/bin/Rscript
+cat("\n\n")
 
 # LSA analysis
 lsa.coherence <- function(fpath = "~/vk/transc/Eleanor-Longden/TED/talk.txt", 
