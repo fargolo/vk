@@ -11,7 +11,7 @@ This is the vk application for the clinical assessment of speech measures
 
 * Summary of set up
 * Configuration
-* Dependencies: Python 2.7; kivy; R package LSAfun; raplyzer (available on git;requires eSpeaker)
+* Dependencies: Python 2.7; kivy 1.9.1; R package LSAfun; raplyzer (available on git;requires eSpeaker)
 * Database configuration: download semantic space EN_100k (http://www.lingexp.uni-tuebingen.de/z2/LSAspaces/) to "~/LSASpace/EN_100k.rda"
 * How to run tests: No tests; Genius code is free of bugs. Just kidding. Coming soon.
 * Deployment instructions: kivy compilation. I don't know how to do it.
