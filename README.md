@@ -23,4 +23,3 @@ This is the vk application for the clinical assessment of speech measures
 ### Who do I talk to? ###
 
 * ping_freud
-* Other community or team contact
