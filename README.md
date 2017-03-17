@@ -1,6 +1,6 @@
 # README #
 
-This is the vk application for the clinical assessment of speech measures
+This is the vk application for the clinical assessment of speech measures. Current text data was taken from TED talks transcripts.
 
 ### What is this repository for? ###
 
