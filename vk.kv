@@ -3,6 +3,12 @@ ScreenManagement:
     Analysis:
 
 <VKMenu>:
+    canvas.before:
+        Color:
+            rgba: 0.1803922, 0.3176471, 0.8549020, 0.9 
+        Rectangle:
+            pos: self.pos
+            size: self.size
     name: "vkmenu"
     BoxLayout:
         id: all_box
@@ -31,21 +37,26 @@ ScreenManagement:
         Button:
             text: "Save"
             on_release: root.on_save_btn_release(name_input.text)
+            background_color: 0.3568627, 0.4666667, 0.8980392, 1 
         BoxLayout:
             orientation: "horizontal"
             spacing: "20dp"
             Button:
                 text: "Record"
                 on_release: main_text.text = "Recording"
+                background_color: 0.3568627, 0.4666667, 0.8980392, 1 
             Button:
                 text: "Stop"
                 on_release: main_text.text = "Stopped" 
+                background_color: 0.3568627, 0.4666667, 0.8980392, 1 
         # Save and Analysis (Next screen)
         Button:
             text: "Send to server"
             on_release: root.on_send_btn_release(name_input.text)
+            background_color: 0.3568627, 0.4666667, 0.8980392, 1  
         Button:
-            text: "Analysis"
+            text: "Server interface"
+            background_color: 0.3568627, 0.4666667, 0.8980392, 1 
             on_press:
                 root.manager.transition.direction = "left"
                 root.manager.current = "analysis"
