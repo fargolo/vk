@@ -15,10 +15,12 @@ class VKMenu(Screen):
     def on_save_btn_release(self,text_input):
         text = Label(text = "Data from patient {} was saved".format(text_input))
         pop_up = Popup(title="Update", content=text, size_hint=(.7, .7))
+        # Insert function to save data do DB here (Twistar)
         pop_up.open()
     def on_send_btn_release(self,text_input):
         text = Label(text = "Data from patient {} was sent to server".format(text_input))
         pop_up = Popup(title="Update",content=text, size_hint=(.7, .7))
+        # Insert function to send data to server here (Twistar)
         pop_up.open()
 
 class Analysis(Screen):

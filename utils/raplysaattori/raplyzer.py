@@ -96,10 +96,10 @@ def read_lyrics(lyrics_dir='../../transc', artist=None, album=None,
     uniq_words = uniq_words[order]
     artist_scores = artist_scores[order]
 
-    print "\nLongest rhymes"
-    while len(longest_rhymes) > 0:
-        l, rhyme = heapq.heappop(longest_rhymes)
-        print rhyme
+#    print "\nLongest rhymes"
+#    while len(longest_rhymes) > 0:
+#        l, rhyme = heapq.heappop(longest_rhymes)
+#        print rhyme
 
     print "\nInterview samples:"
     song_scores = np.array(song_scores)
