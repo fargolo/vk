@@ -24,9 +24,11 @@ class VKMenu(Screen):
         pop_up.open()
 
 class Analysis(Screen):
-    def on_phon_btn_release(self):
+    def on_phon_btn_release(self,input_id):
         local_lyr_dir = "transc" 
-        read_lyrics(lyrics_dir = local_lyr_dir, language="en-us", lookback=15)
+        int_id = int(input_id) 
+        phon_output = read_lyrics(lyrics_dir = local_lyr_dir, language="en-us", lookback=15, patient_id=int_id)
+        return phon_output
     def on_lsa_btn_release(self):
         subprocess.call ("utils/lsa.R")
     pass

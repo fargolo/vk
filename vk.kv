@@ -3,8 +3,9 @@ ScreenManagement:
     Analysis:
 
 <VKMenu>:
-    name: 'vkmenu'
+    name: "vkmenu"
     BoxLayout:
+        id: all_box
         orientation: "vertical"
         padding: root.width * 0.1, root.height * 0.2
         spacing: "10dp"
@@ -25,6 +26,7 @@ ScreenManagement:
         TextInput:
             id: reg_input
             hint_text: "ID"
+            input_type: "number"
         # Record and Stop
         Button:
             text: "Save"
@@ -58,6 +60,14 @@ ScreenManagement:
             text: "Analysis"
             font_size: "40dp" 
         Label:
+            id: id_tittle
+            text: "Insert patient ID"
+            font_size: "20dp" 
+        TextInput:
+            id: reg_input
+            hint_text: "ID"
+            input_filter: "int"
+        Label:
             id: status
             text: ""
             font_size: "25dp"
@@ -65,7 +75,13 @@ ScreenManagement:
             text: "Proccess phonetics"
             on_release: 
                 status.text = "Proccessing"
-                root.on_phon_btn_release()
+                phon_status.text = "Phonetic affinity:\n" + str(root.on_phon_btn_release(reg_input.text))
+                status.text = "Done"
+        Label:
+            id: phon_status
+            text: ""
+            font_size: "15dp" 
+            halign: "center"
         Button:
             text: "Latent semantic analysis"
             on_release:

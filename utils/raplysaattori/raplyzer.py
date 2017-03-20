@@ -10,7 +10,7 @@ import json
 from lyrics import Lyrics
 
 def read_lyrics(lyrics_dir='../../transc', artist=None, album=None, 
-                print_stats=False, language='en-us', lookback=15):
+                print_stats=False, language='en-us', lookback=15, patient_id=0):
     '''
     Read lyrics and compute Rhyme factor (riimikerroin) for each
     artist.
@@ -114,6 +114,7 @@ def read_lyrics(lyrics_dir='../../transc', artist=None, album=None,
         rx = re.compile(u'_')
         name = rx.sub(' ', artists[i])
         print '%d.\t%.3f\t%s' % (i+1, artist_scores[i], name)
+    return artist_scores[patient_id]    
 
 def sort_albums_by_year(albums):
     years = []
