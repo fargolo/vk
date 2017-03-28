@@ -2,13 +2,16 @@ import kivy
 kivy.require('1.9.1')
 
 import subprocess
-
+import json
+import os
+import pickle
 from kivy.app import App
 from kivy.uix.popup import Popup
 from kivy.uix.label import Label
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 from utils.raplysaattori.raplyzer import *
+
 
 class Login(Screen):
     pass
@@ -17,6 +20,14 @@ class Session(Screen):
     pass
 
 class Register(Screen):
+    def on_savestart_btn_release(self, *args):
+        # Code to handle arguments, and send to server 
+        # Bug: data is sent, but reactor doesn't stop.
+        ## Screen is frozen after button release
+        patient_data = json.dumps(args)
+        with open ('data/patient-df.p','wb') as pfile:
+            pickle.dump(patient_data,pfile)
+        os.system('python2.7 data/client.py')
     pass
 
 class VKMenu(Screen):

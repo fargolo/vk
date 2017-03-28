@@ -98,9 +98,14 @@ ScreenManagement:
             hint_text: "PIN"
             input_type: "number"
         Button:
-            text: "Save and start session"
+            text: "Save and send to server"
             background_color: 0.3568627, 0.4666667, 0.8980392, 1 
-            on_release:
+            on_press:
+                root.on_savestart_btn_release(name_input.text, id_input.text, date_input.text, pin_input.text)
+        Button:
+            text: "Start session"
+            background_color: 0.3568627, 0.4666667, 0.8980392, 1 
+            on_press:
                 root.manager.transition.direction = "left"
                 root.manager.current = "vkmenu"
 
