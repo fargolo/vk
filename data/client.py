@@ -7,7 +7,7 @@ class NameSender(Protocol):
         self.transport.write("%s\n" % name)
 
 def gotProtocol(p):
-    p.sendName("Treta")
+    p.sendName("Major")
     reactor.callLater(1, p.sendName, "This is sent in a second")
     reactor.callLater(2, p.transport.loseConnection)
 

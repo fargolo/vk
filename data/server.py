@@ -19,7 +19,7 @@ def done(patient):
 class NamePrinter(Protocol):
     def dataReceived(self,data):
         Registry.DBPOOL = adbapi.ConnectionPool('sqlite3', "patients.sqlite", check_same_thread=False)
-        p = Patient(first_name = str(data), last_name = "Argolo", age = 24)
+        p = Patient(first_name = str(data).rstrip(), last_name = "Argolo", age = 24)
         print ("The name is %s" % data)
         p.save().addCallback(done)
         
