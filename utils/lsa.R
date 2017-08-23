@@ -1,9 +1,11 @@
 #! /usr/bin/Rscript
 cat("\n\n")
 
+
 # LSA analysis
 lsa.coherence <- function(fpath = "~/vk/transc/Eleanor-Longden/TED/talk.txt", 
-                          lsapath = "~/LSASpace/EN_100k.rda"){
+                          lsapath = "~/LSASpace/EN_100k.rda")
+  {
   require(LSAfun,quietly = T)
   load(lsapath)
   transc <- readChar(fpath,file.info(fpath)$size)
