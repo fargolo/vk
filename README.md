@@ -1,11 +1,13 @@
-# README #
+# README 
 
-This is the vk application for the clinical assessment of speech measures. Current text data was taken from TED talks transcripts.
+Demo protype for cross-platform application developed in the 1st year of my Ph.D. It runs on kivy(Linux, Windows, OS X, Android, iOS).  
 
-### What is this repository for? ###
+This is the vk application for assessment of speech measures. Current text data was taken from TED talks transcripts.  
+Current version supports two measures: emanctic coherence (Through LSA) and phoneme similarity([Eric Malmi repo](https://github.com/ekQ/raplysaattori)).
 
-* Prototyping of the first demo versions
-* Version 0.1
+The project is currently frozen due to:
+* Lack of interest from my potential clients.  
+* My Ph.D. changing man subject.
 
 ### How do I get set up? ###
 
@@ -16,10 +18,10 @@ This is the vk application for the clinical assessment of speech measures. Curre
 * How to run tests: No tests; Genius code is free of bugs. Just kidding. Coming soon.
 * Deployment instructions: run "python2.7 main.py"
 
-### Contribution guidelines ###
 
-* E-mail: felipe.c.argolo@hotmail.com
+### Issues
+I stopped while solving remote transfering of files from client to server. I might eventually go back to rewrite it with a better server interface (RESTful?). 
 
-### Who do I talk to? ###
+### Contact info
 
-* ping_freud
+* E-mail: felipe.c.argolo () protonmail.com

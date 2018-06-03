@@ -1,7 +1,6 @@
 ScreenManagement:
     Login:
     Session:
-    Register:
     VKMenu:
     Analysis:
     
@@ -50,23 +49,19 @@ ScreenManagement:
         Rectangle:
             pos: self.pos
             size: self.size
-    BoxLayout:
-        id: session_box
-        orientation: "vertical"
-        padding: root.width * 0.1, root.height * 0.2
-        spacing: "10dp"
-        Button:
+    Button:
             text: "New patient"
             background_color: 0.3568627, 0.4666667, 0.8980392, 1 
             on_release:
-                root.manager.transition.direction = "left" 
+                root.manager.transition.direction = "left"
                 root.manager.current = "register"
-        Button:
+    Button:
             text: "Resume follow up"
             background_color: 0.3568627, 0.4666667, 0.8980392, 1 
             on_release:
                 root.manager.transition.direction = "left"
                 root.manager.current = "vkmenu"
+    
    
 <Register>:
     name: "register"
@@ -77,37 +72,29 @@ ScreenManagement:
             pos: self.pos
             size: self.size
     BoxLayout:
-        id: register_box
-        orientation: "vertical"
-        padding: root.width * 0.1, root.height * 0.2
-        spacing: "10dp"
         TextInput:
             id: name_input
             hint_text: "Name"
             font_size: "15dp"
-        TextInput:
+         TextInput:
             id: id_input
             hint_text: "ID"
             input_type: "number"
+    BoxLayout:
         TextInput:
             id: date_input
             hint_text: "Birth date"
             font_size: "15dp"
-        TextInput:
+         TextInput:
             id: pin_input
             hint_text: "PIN"
             input_type: "number"
-        Button:
-            text: "Save and send to server"
-            background_color: 0.3568627, 0.4666667, 0.8980392, 1 
-            on_press:
-                root.on_savestart_btn_release(name_input.text, id_input.text, date_input.text, pin_input.text)
-        Button:
-            text: "Start session"
-            background_color: 0.3568627, 0.4666667, 0.8980392, 1 
-            on_press:
-                root.manager.transition.direction = "left"
-                root.manager.current = "vkmenu"
+    Button:
+        text: "Login"
+        background_color: 0.3568627, 0.4666667, 0.8980392, 1 
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "vkmenu"
 
 <VKMenu>:
     canvas.before:
