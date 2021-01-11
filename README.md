@@ -5,9 +5,7 @@ Demo protype for cross-platform application developed in the 1st year of my Ph.D
 This is the vk application for assessment of speech measures. Current text data was taken from TED talks transcripts.  
 Current version supports two measures: emanctic coherence (Through LSA) and phoneme similarity([Eric Malmi repo](https://github.com/ekQ/raplysaattori)).
 
-The project is currently frozen due to:
-* Lack of interest from my potential clients.  
-* My Ph.D. changing man subject.
+The project is currently on hold.
 
 ### How do I get set up? ###
 
@@ -15,7 +13,6 @@ The project is currently frozen due to:
 * Configuration
 * Dependencies: Python 2.7; kivy 1.9.1; R package LSAfun; raplyzer (available on git;requires eSpeaker)
 * Database configuration: download semantic space EN_100k (http://www.lingexp.uni-tuebingen.de/z2/LSAspaces/) to "~/LSASpace/EN_100k.rda"
-* How to run tests: No tests; Genius code is free of bugs. Just kidding. Coming soon.
 * Deployment instructions: run "python2.7 main.py"
 
 
